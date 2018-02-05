@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorDarker">#d3c498</color>
+    <color name="colorLighter">#FFF4D1</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="BlackColor">#000000</color>
+    <color name="alpha90_blue">#E6485cbc</color>
+    <color name="ten_percent_opacity_black">#1A000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="plum">#8E4585</color>
+    <color name="lite_fb_blue">#365899</color>
+    <color name="fossil_grey">#cfc4b2</color>
+    <color name="green3">#389156</color>
+    <color name="dkgrey2">#888888 </color>
+    <color name="red">#eb2828</color>
+    <color name="transparent_gray">#E4000000</color>
+    <color name="ltgrey12">#F3F3F3</color>
+    <color name="blue19">#525f91</color>
+    <color name="black">#000000</color>
+    <color name="black_with_ten_percent_opacity">#1A000000</color>
+    <color name="popover_border_black">#646464</color>
+    <color name="white_with_ten_percent_opacity">#1AFFFFFF</color>
+    <color name="white_gray">#CFCFCF</color>
+    <color name="light_gray">#DFDFDF</color>
+    <color name="dark_gray">#907F7F7F</color>
+    <color name="kindof_gray">#6a6a6a</color>
+    <color name="black_gray">#3F3F3F</color>
+    <color name="light_blue">#3B5998</color>
+    <color name="mid_blue">#3B5998</color>
+    <color name="dark_blue">#193A7F</color>
+    <color name="steel_blue">#5CACEE</color>
+    <color name="blue21">#0000ff</color>
+
+
+   </resources>

@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">Nani Motors</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="home">Home</string>
+    <string name="showrooms">Showrooms</string>
+    <string name="contact_us">Contact us</string>
+    <string name="developer">Developers Info</string>
+
+    <string name="pulsar_150_title">Pulsar 150 </string>
+    <string name="pulsar_180_title">Pulsar 180 </string>
+    <string name="pulsar_135LS_title">Pulsar 135LS </string>
+    <string name="pulsar_220F_title">Pulsar 220F </string>
+    <string name="pulsar_NS160_title">Pulsar NS160 </string>
+    <string name="pulsar_NS220_title">Pulsar NS220 </string>
+    <string name="pulsar_RS220_title">Pulsar RS220 </string>
+    <string name="plantina_100ES_title">Plantina ComforTec 100ES </string>
+    <string name="CT_100B_title">CT 100B </string>
+    <string name="CT_100_KS_Alloy_title">CT 100 KS Alloy </string>
+    <string name="CT_100_ES_Alloy_title">CT 100 ES Alloy</string>
+    <string name="dominar_400_title">Dominar 400 </string>
+    <string name="discover_110_title">Discover 110</string>
+    <string name="discover_125_title">Discover 125</string>
+    <string name="V_12_title">V 12</string>
+    <string name="V_15_title">V 15</string>
+    <string name="avenger_cruise_220_title">Avenger Cruise 220</string>
+    <string name="avenger_street_220_title">Avenger Street 220</string>
+    <string name="avenger_street_150_title">Avenger Street 150</string>
+
+    <!--contact us strings-->
+    <string name="address_title">Address</string>
+    <string name="phone_title">Contacts </string>
+    <string name="email_title"><u>Write To</u></string>
+
+    <string name="showroom1_name">Nani Motors</string>
+    <string name="showroom2_name">Uma Sai Motors</string>
+    <string name="showroom_manger">Manager</string>
+    <string name="ShowRoom_owner_name">Bikki Venu Kumar (Nani)</string>
+
+    <string name="Kesumudram_showroom_manager_phone">Kesamudram</string>
+    <string name="Maripeda_showroom_manager_phone">Maripeda</string>
+    <string name="Showroom_propeater">Proprietor</string>
+    <string name="Nanishowroomaddress">Near: Kargil Center,\nVi \u0026 Mn: Maripeda(Banglow),\nDist: Mahabubabad,\nTelangana,\npin code: 506315.</string>
+    <string name="UmaSaishowroomaddress">Market Road,\nVi \u0026 Mn: Kesamudram,\nDist: Mahabubabad,\nTelangana,\npin code: 506112.</string>
+    <string name="UmaSai_name">Uma Sai Motors</string>
+    <string name="Contact1_phone_number">+91 990 824 3623</string>
+    <string name="Contact2_phone_number">+91 984 871 8248</string>
+    <string name="Contact3_phone_number">+91 953 384 4900</string>
+    <string name="Contact4_phone_number">+91 964 008 7303 </string>
+    <string name="Nani_Email">nanibajajmaripeda@gmail.com </string>
+    <!--ends contact-us string    -->
+
+    <!--Splash Screen-->
+    <string name="SplashScreen_title_1">Nani</string>
+    <string name="SplashScreen_title_2">Motors</string>
+
+    <!--Developer Information-->
+    <string name="Developer_description">I am Sai Kumar Bikki, Mobile App Developer.Please provide your feedback,tips and suggestions and follow us on below </string>
+
+
+</resources>

@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overview_frame"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_below="@+id/viewPager"
+    android:background="@drawable/card_base_white">
+
+    <TextView
+        android:id="@+id/tv_overview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Overview :"
+        android:textColor="@color/lite_fb_blue"
+        android:textSize="@dimen/_20sdp" />
+
+    <LinearLayout
+        android:id="@+id/capacity_view"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_overview"
+        android:layout_marginLeft="20dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_capacity_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="15dp"
+            android:text="Capacity"
+            android:gravity="center_horizontal|center"
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/tv_capacity_key"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="Capacity"
+            android:gravity="center_horizontal|center"
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/vertical_divider_1"
+        android:layout_width="2dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/tv_overview"
+        android:layout_centerHorizontal="true"
+        android:background="@color/lite_fb_blue">
+    </ImageView>
+
+    <LinearLayout
+        android:id="@+id/weight_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_overview"
+        android:layout_marginRight="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_weight_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Weight"
+            android:gravity="center_horizontal|center"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/tv_weight_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="Weight"
+            android:gravity="center_horizontal|center"
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="@dimen/_15sdp" />
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/horizontal_line1"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_below="@+id/capacity_view"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="70dp"
+        android:src="@color/lite_fb_blue" />
+
+    <ImageView
+        android:id="@+id/horizontal_line2"
+        android:layout_width="100dp"
+        android:layout_height="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/capacity_view"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="70dp"
+        android:src="@color/lite_fb_blue" />
+
+    <LinearLayout
+        android:id="@+id/fueltank_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/horizontal_line1"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_fueltank_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:text="xx L"
+            android:gravity="center_horizontal|center"
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/tv_fueltank_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center_horizontal|center"
+            android:layout_below="@+id/horizontal_line1"
+            android:text="Fuel Tank \nCapacity"
+
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/maxpower_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/horizontal_line2"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_maxpower_value"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Max Power"
+            android:gravity="center_horizontal|center"
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/tv_maxpower_key"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Max Power"
+            android:gravity="center_horizontal|center"
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="@dimen/_15sdp" />
+        <TextView
+            android:id="@+id/tv_maxpower_key_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center"
+            android:text="(PS @ RPM)"
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/vertical_divider_2"
+        android:layout_width="2dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/horizontal_line2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@color/lite_fb_blue"></ImageView>
+
+
+</RelativeLayout>

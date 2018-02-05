@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="4dp"
+    android:background="@color/ten_percent_opacity_black">
+
+    <RelativeLayout
+        android:id="@+id/nani_address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/card_base_white">
+
+        <TextView
+            android:id="@+id/contact_us_NaniMotors_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center_horizontal|center"
+            android:text="@string/app_name"
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/contact_us_nanishowroom_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact_us_NaniMotors_TV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal|center"
+            android:text="@string/Nanishowroomaddress"
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/umasai_address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/card_base_white"
+        android:layout_below="@+id/nani_address_layout">
+
+        <TextView
+            android:id="@+id/contact_us_umasai_Motors_TV"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:gravity="center_horizontal|center"
+            android:text="@string/UmaSai_name"
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/contact_us_umasai_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/contact_us_umasai_Motors_TV"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal|center"
+            android:text="@string/UmaSaishowroomaddress"
+            android:textColor="@color/lite_fb_blue"
+            android:textSize="20sp" />
+    </RelativeLayout>
+</RelativeLayout>
+
+

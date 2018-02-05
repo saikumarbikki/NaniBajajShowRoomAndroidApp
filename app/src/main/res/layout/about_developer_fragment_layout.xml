@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="4dp"
+    android:background="@drawable/card_base_white">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="20dp">
+
+    <TextView
+        android:id="@+id/tv_developer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Developed by: "
+        android:layout_alignBaseline="@+id/tv_Dev_name"
+        android:textSize="@dimen/_15sdp"
+        android:fontFamily="sans-serif"/>
+
+    <TextView
+        android:id="@+id/tv_Dev_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@+id/tv_developer"
+        android:text="Sai Kumar Bikki "
+        android:fontFamily="sans-serif"
+        android:textStyle="italic"
+        android:textColor="@color/lite_fb_blue"
+        android:textSize="@dimen/_20sdp"/>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/dev_image"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_below="@+id/tv_Dev_name"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/sai_pic_1"
+        app:civ_border_color="@color/lite_fb_blue"
+        app:civ_border_width="2dp" />
+
+    <TextView
+        android:id="@+id/tv_Dev_disc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/tv_Dev_name"
+        android:layout_toRightOf="@+id/dev_image"
+        android:text="@string/Developer_description"
+        android:textSize="@dimen/_15sdp"
+        android:gravity=""
+        android:fontFamily="sans-serif"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_Dev_disc"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_fb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_fb"/>
+        <ImageView
+            android:id="@+id/iv_twiteer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_twiteer"/>
+        <ImageView
+            android:id="@+id/iv_skype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_skype"/>
+        <ImageView
+            android:id="@+id/iv_googleplus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_googleplus"/>
+        <ImageView
+            android:id="@+id/iv_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:visibility="gone"
+            android:src="@drawable/ic_instagram"/>
+    </LinearLayout>
+
+</RelativeLayout>
+</RelativeLayout>

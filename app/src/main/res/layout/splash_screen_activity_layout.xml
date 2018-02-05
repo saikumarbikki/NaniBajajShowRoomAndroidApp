@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/blue_bg_4">
+
+    <RelativeLayout
+        android:id="@+id/splashscreen_title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_centerHorizontal="true">
+
+    <TextView
+        android:id="@+id/NaniMotors_Title_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:text="@string/SplashScreen_title_1"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+    <ImageView
+        android:id="@+id/bajaj_IB_logo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:layout_toRightOf="@+id/NaniMotors_Title_1"
+        android:layout_gravity="center"
+        android:src="@drawable/bj" />
+    <TextView
+        android:id="@+id/NaniMotors_Title_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/bajaj_IB_logo"
+        android:fontFamily="sans-serif"
+        android:text="@string/SplashScreen_title_2"
+        android:textColor="@color/white"
+        android:textSize="45sp"
+        android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/Welcomepage_bike_icon"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/splashscreen_title_layout"
+        android:src="@drawable/pulsar_rs200" />
+
+
+
+</RelativeLayout>
