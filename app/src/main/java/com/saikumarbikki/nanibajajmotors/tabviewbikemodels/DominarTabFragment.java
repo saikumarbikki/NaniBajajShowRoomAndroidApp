@@ -56,7 +56,10 @@ public class DominarTabFragment extends Fragment implements BikeItemEventListene
 
     private BikeData getDominar400Details() {
         ArrayList<Integer> dominarBikeFaces = new ArrayList<>();
+        dominarBikeFaces.add(R.drawable.dominar_12345);
         dominarBikeFaces.add(R.drawable.dominar_400);
+        dominarBikeFaces.add(R.drawable.bajaj_dominar_400_red);
+        dominarBikeFaces.add(R.drawable.bajajdominar123);
         ArrayList<Integer> bikeColorAvailability = new ArrayList<>();
         bikeColorAvailability.add(R.color.white);
         bikeColorAvailability.add(R.color.black);
@@ -67,7 +70,7 @@ public class DominarTabFragment extends Fragment implements BikeItemEventListene
         bikeColorNames.add("Matte Black");
         bikeColorNames.add("Midnight Blue");
         bikeColorNames.add("Twilight Plum");
-        BikeData mDonminar400 = new BikeData(getString(R.string.dominar_400_title), R.drawable.dominar_400, null);
+        BikeData mDonminar400 = new BikeData(getString(R.string.dominar_400_title), R.drawable.dominar_12345, null);
         mDonminar400.setBikeFaceImages(dominarBikeFaces);
         mDonminar400.setBikeColorAvaliblity(bikeColorAvailability);
         mDonminar400.setBikeColorName(bikeColorNames);

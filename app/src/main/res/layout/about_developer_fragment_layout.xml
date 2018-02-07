@@ -19,6 +19,7 @@
         android:text="Developed by: "
         android:layout_alignBaseline="@+id/tv_Dev_name"
         android:textSize="@dimen/_15sdp"
+        android:textColor="@color/black"
         android:fontFamily="sans-serif"/>
 
     <TextView
@@ -55,7 +56,8 @@
         android:layout_toRightOf="@+id/dev_image"
         android:text="@string/Developer_description"
         android:textSize="@dimen/_15sdp"
-        android:gravity=""
+        android:textColor="@color/BlackColor"
+        android:textStyle="italic"
         android:fontFamily="sans-serif"/>
 
     <LinearLayout

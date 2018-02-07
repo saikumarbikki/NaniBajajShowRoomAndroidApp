@@ -69,7 +69,7 @@ public class VTabFragment extends Fragment implements BikeItemEventListener {
         mV12.setBikeColorAvaliblity(bikeColorAvailability);
         mV12.setBikeColorName(bikeColorNames);
         mV12.setBikeCapacity("124.5 cc");
-        mV12.setBikeFuelTankCapacity("--");
+        mV12.setBikeFuelTankCapacity("13 L");
         mV12.setBikeMaxPower("10.7 @ 7500");
         mV12.setBikeWeight("133 kg");
         return mV12;
@@ -93,7 +93,7 @@ public class VTabFragment extends Fragment implements BikeItemEventListener {
         mV15.setBikeColorAvaliblity(bikeColorAvailability);
         mV15.setBikeColorName(bikeColorNames);
         mV15.setBikeCapacity("149.5 cc");
-        mV15.setBikeFuelTankCapacity("--");
+        mV15.setBikeFuelTankCapacity("13 L");
         mV15.setBikeMaxPower("12.0 @ 7500");
         mV15.setBikeWeight("137 kg");
         return mV15;
