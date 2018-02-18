@@ -22,9 +22,9 @@ import java.util.ArrayList;
  * Created by sbikki on 1/23/2018.
  */
 
-public class PlantinaTabFragment extends Fragment implements BikeItemEventListener {
+public class PlatinaTabFragment extends Fragment implements BikeItemEventListener {
     private Communicator communicatorListener;
-    public PlantinaTabFragment() {
+    public PlatinaTabFragment() {
         // Required empty public constructor
     }
 
@@ -69,7 +69,7 @@ public class PlantinaTabFragment extends Fragment implements BikeItemEventListen
         bikeColorNames.add("Black");
 
         //We are setting all the bike information to Bike data object by the help of constructor and setter method.
-        BikeData mPlantina100ES = new BikeData(getString(R.string.plantina_100ES_title), R.drawable.platina_100es, null);
+        BikeData mPlantina100ES = new BikeData(getString(R.string.platina_100ES_title), R.drawable.platina_100es, null);
         mPlantina100ES.setBikeFaceImages(plantinaBikeFaces);
         mPlantina100ES.setBikeColorAvaliblity(bikeColorAvailability);
         mPlantina100ES.setBikeColorName(bikeColorNames);

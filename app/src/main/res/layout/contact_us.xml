@@ -8,25 +8,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical"
         android:layout_marginLeft="5dp"
-        android:layout_marginRight="2dp">
-
-        <!--    <TextView
-                android:id="@+id/contact_us_nani_phone_tv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:text="@string/phone_title"
-                android:textColor="@color/colorPrimary"
-                android:textSize="25sp"
-                android:textStyle="bold" />-->
+        android:layout_marginRight="2dp"
+        android:orientation="vertical">
 
         <RelativeLayout
             android:id="@+id/contactus_phone_showrooms"
             android:layout_width="wrap_content"
-            android:layout_height="130dp"
+            android:layout_height="150dp"
             android:layout_marginTop="5dp"
             android:background="@drawable/card_base_white">
 
@@ -45,27 +34,37 @@
                 android:id="@+id/contactus_phone_showrooms_proprater"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/contactus_phone_showrooms_Manager"
                 android:layout_marginLeft="15dp"
                 android:layout_marginTop="20dp"
                 android:layout_toRightOf="@+id/contactus_phone_showrooms_Manager"
                 android:fontFamily="sans-serif"
                 android:text="@string/Showroom_propeater"
-                android:layout_alignBaseline="@+id/contactus_phone_showrooms_Manager"
                 android:textColor="@color/black_gray"
                 android:textSize="12sp"
                 android:textStyle="normal" />
 
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/brother_contact_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/contactus_phone_showrooms_Manager"
+                android:layout_margin="10dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/bro" />
 
             <TextView
                 android:id="@+id/contactus_phone_showrooms_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/contactus_phone_showrooms_Manager"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="15dp"
                 android:text="@string/Contact1_phone_number"
                 android:textColor="@color/black"
                 android:textSize="18dp"
+
                 android:textStyle="normal" />
 
             <ImageView
@@ -74,7 +73,7 @@
                 android:layout_height="25dp"
                 android:layout_below="@+id/contactus_phone_showrooms_Manager"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="17dp"
                 android:layout_toRightOf="@+id/contactus_phone_showrooms_tv"
                 android:src="@drawable/ic_phone_black" />
 
@@ -85,17 +84,28 @@
                 android:layout_below="@+id/contactus_phone_showrooms_Manager"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="17dp"
                 android:layout_toRightOf="@+id/contactus_phone_showrooms_phone_icon"
                 android:src="@drawable/ic_textsms_black" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/daddy_contact_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/brother_contact_icon"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/daddy" />
+
 
             <TextView
                 android:id="@+id/contactus_phone_daddy_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/contactus_phone_showrooms_tv"
-                android:layout_marginLeft="25dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginLeft="65dp"
+                android:layout_marginTop="18dp"
                 android:text="@string/Contact2_phone_number"
                 android:textColor="@color/black"
                 android:textSize="18dp"
@@ -107,7 +117,7 @@
                 android:layout_height="25dp"
                 android:layout_below="@+id/contactus_phone_showrooms_phone_icon"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="18dp"
                 android:layout_toRightOf="@+id/contactus_phone_showrooms_tv"
                 android:src="@drawable/ic_phone_black" />
 
@@ -118,7 +128,7 @@
                 android:layout_below="@+id/contactus_phone_showrooms_SMS_icon"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="25dp"
-                android:layout_marginTop="12dp"
+                android:layout_marginTop="18dp"
                 android:layout_toRightOf="@+id/contactus_phone_showrooms_phone_icon"
                 android:src="@drawable/ic_textsms_black" />
         </RelativeLayout>
@@ -145,6 +155,7 @@
                 android:id="@+id/contactus_phone_showroom_1_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/contactus_phone_showroom_1_name"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_toRightOf="@+id/contactus_phone_showroom_1_name"
@@ -152,7 +163,6 @@
                 android:text="@string/Maripeda_showroom_manager_phone"
                 android:textColor="@color/black_gray"
                 android:textSize="12sp"
-                android:layout_alignBaseline="@+id/contactus_phone_showroom_1_name"
                 android:textStyle="normal" />
 
             <TextView
@@ -167,12 +177,24 @@
                 android:textColor="@color/lite_fb_blue"
                 android:textSize="18sp" />
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/nani_manager_contact_image"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/contactus_phone_showroom_1_Manager"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/krishna" />
+
+
             <TextView
                 android:id="@+id/contactus_phone_showroom_1_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/contactus_phone_showroom_1_Manager"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="3dp"
                 android:text="@string/Contact3_phone_number"
                 android:textColor="@color/black"
@@ -223,12 +245,12 @@
                 android:id="@+id/contactus_phone_showroom_2_address"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/contactus_phone_showroom_2_name"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="15dp"
                 android:layout_toRightOf="@+id/contactus_phone_showroom_2_name"
                 android:fontFamily="sans-serif"
                 android:text="@string/Kesumudram_showroom_manager_phone"
-                android:layout_alignBaseline="@+id/contactus_phone_showroom_2_name"
                 android:textColor="@color/black_gray"
                 android:textSize="12sp"
                 android:textStyle="normal" />
@@ -245,13 +267,21 @@
                 android:textColor="@color/lite_fb_blue"
                 android:textSize="18sp" />
 
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/umasai_manager_contact_icon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/contactus_phone_showroom_2_Manager"
+                android:layout_alignStart="@+id/contactus_phone_showroom_2_Manager"
+                android:layout_alignTop="@+id/contactus_phone_showroom_2_tv"
+                android:src="@drawable/mama" />
 
             <TextView
                 android:id="@+id/contactus_phone_showroom_2_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/contactus_phone_showroom_2_Manager"
-                android:layout_marginLeft="25dp"
+                android:layout_marginLeft="65dp"
                 android:layout_marginTop="3dp"
                 android:text="@string/Contact4_phone_number"
                 android:textColor="@color/black"

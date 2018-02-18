@@ -9,7 +9,7 @@ import com.saikumarbikki.nanibajajmotors.tabviewbikemodels.AvengerTabFragment;
 import com.saikumarbikki.nanibajajmotors.tabviewbikemodels.CT100TabFragment;
 import com.saikumarbikki.nanibajajmotors.tabviewbikemodels.DiscoverTabFragment;
 import com.saikumarbikki.nanibajajmotors.tabviewbikemodels.DominarTabFragment;
-import com.saikumarbikki.nanibajajmotors.tabviewbikemodels.PlantinaTabFragment;
+import com.saikumarbikki.nanibajajmotors.tabviewbikemodels.PlatinaTabFragment;
 import com.saikumarbikki.nanibajajmotors.tabviewbikemodels.PulsarTabFragment;
 import com.saikumarbikki.nanibajajmotors.tabviewbikemodels.VTabFragment;
 
@@ -31,7 +31,7 @@ public class CustomFragmentPageAdapter extends FragmentPagerAdapter{
             case 1:
                 return new DiscoverTabFragment();
             case 2:
-                return new PlantinaTabFragment();
+                return new PlatinaTabFragment();
             case 3:
                 return new CT100TabFragment();
             case 4:
@@ -57,7 +57,7 @@ public class CustomFragmentPageAdapter extends FragmentPagerAdapter{
             case 1:
                 return "DISCOVER";
             case 2:
-                return "PLANTINA";
+                return "PLATINA";
             case 3:
                 return "CT 100";
             case 4:
