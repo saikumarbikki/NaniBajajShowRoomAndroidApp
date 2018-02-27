@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/ten_percent_opacity_black"
     tools:context="com.saikumarbikki.nanibajajmotors.fragment.BaseTabFragment">
 
     <android.support.design.widget.TabLayout

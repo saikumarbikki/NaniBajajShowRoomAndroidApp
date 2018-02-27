@@ -65,48 +65,63 @@
                 android:textSize="@dimen/_15sdp"
                 android:textStyle="italic" />
 
-            <LinearLayout
+            <HorizontalScrollView
+                android:id="@+id/icons_horizonalscroll"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/tv_Dev_disc"
-                android:orientation="horizontal">
+                android:layout_below="@+id/tv_Dev_disc">
 
-                <ImageView
-                    android:id="@+id/iv_fb"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/ic_fb" />
+                    android:layout_marginBottom="50dp"
+                    android:orientation="horizontal">
 
-                <ImageView
-                    android:id="@+id/iv_twiteer"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/ic_twiteer" />
+                    <ImageView
+                        android:id="@+id/iv_linkedIn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_linkedin_1" />
 
-                <ImageView
-                    android:id="@+id/iv_skype"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/ic_skype" />
+                    <ImageView
+                        android:id="@+id/iv_fb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_fb" />
 
-                <ImageView
-                    android:id="@+id/iv_googleplus"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/ic_googleplus" />
+                    <ImageView
+                        android:id="@+id/iv_twiteer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_twiteer" />
 
-                <ImageView
-                    android:id="@+id/iv_instagram"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="10dp"
-                    android:src="@drawable/ic_instagram"
-                    android:visibility="gone" />
-            </LinearLayout>
+                    <ImageView
+                        android:id="@+id/iv_skype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_skype"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/iv_googleplus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_googleplus" />
+
+                    <ImageView
+                        android:id="@+id/iv_instagram"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_instagram"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </HorizontalScrollView>
 
         </RelativeLayout>
     </ScrollView>

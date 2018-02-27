@@ -4,23 +4,28 @@
     android:layout_height="wrap_content"
     android:background="@drawable/card_base_white">
 
-        <TextView
-            android:id="@+id/color_avaliblity_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="sans-serif"
-            android:text="Colors Avalible"
-            android:textColor="@color/lite_fb_blue"
-            android:textSize="25dp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/color_avaliblity_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif"
+        android:text="Colors Avaliable"
+        android:textColor="@color/lite_fb_blue"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/color_avaliblity_tv">
 
         <RelativeLayout
             android:id="@+id/color_avaliblity_frame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/color_avaliblity_tv"
             android:layout_marginLeft="10dp"
             android:layout_marginTop="10dp"
             android:orientation="horizontal">
@@ -30,7 +35,8 @@
                 android:layout_width="60dp"
                 android:layout_height="60dp"
                 android:layout_margin="5dp"
-                android:background="@color/red"></ImageView>
+                android:background="@color/red">
+            </ImageView>
 
             <TextView
                 android:id="@+id/color_first_view_tv"
@@ -126,5 +132,6 @@
                 android:textAlignment="center"
                 android:visibility="gone" />
         </RelativeLayout>
+    </HorizontalScrollView>
 
 </RelativeLayout>

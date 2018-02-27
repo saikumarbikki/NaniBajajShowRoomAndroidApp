@@ -25,27 +25,9 @@
     <group android:id="@+id/four" android:checkableBehavior="single">
         <item
             android:id="@+id/nav_developer"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/developer_logo"
             android:title="@string/developer" />
     </group>
 
-m
-    <!--    <item android:title="@string/remote_services">
-            <menu>
-                <item
-                    android:id="@+id/nav_sound_cound"
-                    android:icon="@drawable/ic_menu_camera"
-                    android:title="@string/sound_cloud" />
-            </menu>
-        </item>
-
-        <item android:title="@string/local_services">
-            <menu>
-                <item
-                    android:id="@+id/nav_raw_folder"
-                    android:icon="@drawable/ic_menu_camera"
-                    android:title="@string/app_raw_folder" />
-            </menu>
-        </item>-->
 
 </menu>

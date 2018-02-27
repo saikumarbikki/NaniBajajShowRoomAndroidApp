@@ -225,7 +225,7 @@ public class PulsarTabFragment extends Fragment implements BikeItemEventListener
         mPulsarNS200.setBikeCapacity("199.5 cc");
         mPulsarNS200.setBikeFuelTankCapacity("12 L");
         mPulsarNS200.setBikeMaxPower("23.5 @ 9500");
-        mPulsarNS200.setBikeWeight("154 (ABS) \n" + "152 (Double Disc)");
+        mPulsarNS200.setBikeWeight("154 (ABS) \n" + "152 (DD)");
         return mPulsarNS200;
     }
 
@@ -245,7 +245,7 @@ public class PulsarTabFragment extends Fragment implements BikeItemEventListener
         mPulsarRS200.setBikeCapacity("199.5 cc");
         mPulsarRS200.setBikeFuelTankCapacity("13 L");
         mPulsarRS200.setBikeMaxPower("23.5 @ 9500");
-        mPulsarRS200.setBikeWeight("154 (ABS) \n" + "152 (Double \n Disc)");
+        mPulsarRS200.setBikeWeight("154 (ABS) \n" + "152 (DD)");
         return mPulsarRS200;
     }
 

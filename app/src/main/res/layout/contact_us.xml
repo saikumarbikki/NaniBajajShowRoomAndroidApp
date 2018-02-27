@@ -8,15 +8,12 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginLeft="5dp"
-        android:layout_marginRight="2dp"
         android:orientation="vertical">
 
         <RelativeLayout
             android:id="@+id/contactus_phone_showrooms"
             android:layout_width="wrap_content"
             android:layout_height="150dp"
-            android:layout_marginTop="5dp"
             android:background="@drawable/card_base_white">
 
             <TextView
@@ -59,12 +56,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/contactus_phone_showrooms_Manager"
-                android:layout_marginLeft="65dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/brother_contact_icon"
                 android:text="@string/Contact1_phone_number"
                 android:textColor="@color/black"
                 android:textSize="18dp"
-
                 android:textStyle="normal" />
 
             <ImageView
@@ -104,8 +101,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/contactus_phone_showrooms_tv"
-                android:layout_marginLeft="65dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="18dp"
+                android:layout_toRightOf="@+id/daddy_contact_icon"
                 android:text="@string/Contact2_phone_number"
                 android:textColor="@color/black"
                 android:textSize="18dp"
@@ -194,8 +192,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/contactus_phone_showroom_1_Manager"
-                android:layout_marginLeft="65dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/nani_manager_contact_image"
                 android:text="@string/Contact3_phone_number"
                 android:textColor="@color/black"
                 android:textSize="18dp"
@@ -274,6 +273,7 @@
                 android:layout_alignLeft="@+id/contactus_phone_showroom_2_Manager"
                 android:layout_alignStart="@+id/contactus_phone_showroom_2_Manager"
                 android:layout_alignTop="@+id/contactus_phone_showroom_2_tv"
+                android:layout_marginRight="10dp"
                 android:src="@drawable/mama" />
 
             <TextView
@@ -281,8 +281,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/contactus_phone_showroom_2_Manager"
-                android:layout_marginLeft="65dp"
+                android:layout_marginLeft="5dp"
                 android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/umasai_manager_contact_icon"
                 android:text="@string/Contact4_phone_number"
                 android:textColor="@color/black"
                 android:textSize="18dp"
@@ -334,7 +335,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="25dp"
                 android:layout_below="@+id/contact_us_nani_email_tv"
-                android:layout_marginLeft="25dp"
+                android:layout_centerHorizontal="true"
                 android:layout_marginTop="15dp"
                 android:text="@string/Nani_Email"
                 android:textColor="@color/black"
@@ -343,11 +344,12 @@
 
             <ImageView
                 android:id="@+id/contact_us_email_IV"
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/Contact_us_email"
+                android:layout_centerHorizontal="true"
                 android:layout_marginLeft="10dp"
-                android:layout_marginTop="55dp"
-                android:layout_toRightOf="@+id/Contact_us_email"
+                android:layout_marginTop="10dp"
                 android:src="@drawable/ic_email_black" />
         </RelativeLayout>
 
