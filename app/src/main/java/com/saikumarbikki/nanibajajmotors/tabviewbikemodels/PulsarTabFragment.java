@@ -212,7 +212,7 @@ public class PulsarTabFragment extends Fragment implements BikeItemEventListener
         pulsarBikeFaces.add(R.drawable.pulsar_ns200);
         ArrayList<Integer> bikeColorAvailability = new ArrayList<>();
         bikeColorAvailability.add(R.color.red);
-        bikeColorAvailability.add(R.color.white);
+        bikeColorAvailability.add(R.color.moon_white);
         bikeColorAvailability.add(R.color.black);
         ArrayList<String> bikeColorNames = new ArrayList<>();
         bikeColorNames.add("Wild Red");

@@ -61,7 +61,7 @@ public class DominarTabFragment extends Fragment implements BikeItemEventListene
         dominarBikeFaces.add(R.drawable.bajaj_dominar_400_red);
         dominarBikeFaces.add(R.drawable.bajajdominar123);
         ArrayList<Integer> bikeColorAvailability = new ArrayList<>();
-        bikeColorAvailability.add(R.color.white);
+        bikeColorAvailability.add(R.color.moon_white);
         bikeColorAvailability.add(R.color.black);
         bikeColorAvailability.add(R.color.blue19);
         bikeColorAvailability.add(R.color.plum);
