@@ -75,7 +75,7 @@ public class DiscoverTabFragment extends Fragment implements BikeItemEventListen
         bikeColorNames.add("Blue");
         BikeData mDiscover110 = new BikeData(getString(R.string.discover_110_title), R.drawable.discover_110, null);
         mDiscover110.setBikeFaceImages(discoverBikeFaces);
-        mDiscover110.setBikeColorAvaliblity(bikeColorAvailability);
+        mDiscover110.setBikeColorAvailability(bikeColorAvailability);
         mDiscover110.setBikeColorName(bikeColorNames);
         mDiscover110.setBikeCapacity("115.45 cc");
         mDiscover110.setBikeFuelTankCapacity("8 L");
@@ -99,7 +99,7 @@ public class DiscoverTabFragment extends Fragment implements BikeItemEventListen
         bikeColorNames.add("Blue");
         BikeData mDiscover125 = new BikeData(getString(R.string.discover_125_title), R.drawable.discover_125, null);
         mDiscover125.setBikeFaceImages(discoverBikeFaces);
-        mDiscover125.setBikeColorAvaliblity(bikeColorAvailability);
+        mDiscover125.setBikeColorAvailability(bikeColorAvailability);
         mDiscover125.setBikeColorName(bikeColorNames);
         mDiscover125.setBikeCapacity("124.5 cc");
         mDiscover125.setBikeFuelTankCapacity("8 L");

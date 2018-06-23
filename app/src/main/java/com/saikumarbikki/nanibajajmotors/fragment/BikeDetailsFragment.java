@@ -101,7 +101,7 @@ public class BikeDetailsFragment extends Fragment implements BikeImageClickListe
     }
 
     private void setBikeColorsData() {
-        ArrayList<Integer> bikeColorCodes = selectedBikeData.getBikeColorAvaliblity();
+        ArrayList<Integer> bikeColorCodes = selectedBikeData.getBikeColorAvailability();
         ArrayList<String> bikeColorNames = selectedBikeData.getBikeColorName();
         for (int i = 0; i < bikeColorCodes.size(); i++) {
             switch (i) {
@@ -132,7 +132,7 @@ public class BikeDetailsFragment extends Fragment implements BikeImageClickListe
     }
 
     private void setBikeAvalibleColorsToView(int position, int imageResID, int textViewID) {
-        ArrayList<Integer> bikeColorCodes = selectedBikeData.getBikeColorAvaliblity();
+        ArrayList<Integer> bikeColorCodes = selectedBikeData.getBikeColorAvailability();
         ArrayList<String> bikeColorNames = selectedBikeData.getBikeColorName();
         ImageView imageView = (ImageView) rootView.findViewById(imageResID);
         imageView.setBackgroundColor(getResources().getColor(bikeColorCodes.get(position)));

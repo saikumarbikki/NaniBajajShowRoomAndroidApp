@@ -72,7 +72,7 @@ public class AvengerTabFragment extends Fragment implements BikeItemEventListene
         bikeColorNames.add("Moon White");
         BikeData mAvengerCrusie220 = new BikeData(getString(R.string.avenger_cruise_220_title), R.drawable.avenger_cruise_220, null);
         mAvengerCrusie220.setBikeFaceImages(getAvengerCrusie220BikeFaces);
-        mAvengerCrusie220.setBikeColorAvaliblity(bikeColorAvailability);
+        mAvengerCrusie220.setBikeColorAvailability(bikeColorAvailability);
         mAvengerCrusie220.setBikeColorName(bikeColorNames);
         mAvengerCrusie220.setBikeCapacity("220 cc");
         mAvengerCrusie220.setBikeFuelTankCapacity("13 L");
@@ -93,7 +93,7 @@ public class AvengerTabFragment extends Fragment implements BikeItemEventListene
         bikeColorNames.add("Matt White");
         BikeData mAvengerStreet220 = new BikeData(getString(R.string.avenger_street_220_title), R.drawable.avenger_street_220, null);
         mAvengerStreet220.setBikeFaceImages(getAvengerStreet220BikeFaces);
-        mAvengerStreet220.setBikeColorAvaliblity(bikeColorAvailability);
+        mAvengerStreet220.setBikeColorAvailability(bikeColorAvailability);
         mAvengerStreet220.setBikeColorName(bikeColorNames);
         mAvengerStreet220.setBikeCapacity("220 cc");
         mAvengerStreet220.setBikeFuelTankCapacity("13 L");
@@ -103,18 +103,21 @@ public class AvengerTabFragment extends Fragment implements BikeItemEventListene
     }
     private BikeData getAvengerStreet180Details() {
         ArrayList<Integer> getAvengerStreet180BikeFaces = new ArrayList<>();
-        getAvengerStreet180BikeFaces.add(R.drawable.avenger_street_180);
-        getAvengerStreet180BikeFaces.add(R.drawable.bajaj_avenger_street_180);
-        getAvengerStreet180BikeFaces.add(R.drawable.avenger2);
+
+        getAvengerStreet180BikeFaces.add(R.drawable.avenger_street_180_std_black);
+        getAvengerStreet180BikeFaces.add(R.drawable.avenger_street_180_std_red_hot);
+        getAvengerStreet180BikeFaces.add(R.drawable.avenger_street_180_engineview);
+        getAvengerStreet180BikeFaces.add(R.drawable.avenger_street_180_seatview);
+
         ArrayList<Integer> bikeColorAvailability = new ArrayList<>();
         bikeColorAvailability.add(R.color.red);
         bikeColorAvailability.add(R.color.black);
         ArrayList<String> bikeColorNames = new ArrayList<>();
         bikeColorNames.add("Spicy Red");
         bikeColorNames.add("Ebony Black");
-        BikeData mAvengerStreet180 = new BikeData(getString(R.string.avenger_street_180_title), R.drawable.avenger_street_180, null);
+        BikeData mAvengerStreet180 = new BikeData(getString(R.string.avenger_street_180_title), R.drawable.avenger_street_180_std_black, null);
         mAvengerStreet180.setBikeFaceImages(getAvengerStreet180BikeFaces);
-        mAvengerStreet180.setBikeColorAvaliblity(bikeColorAvailability);
+        mAvengerStreet180.setBikeColorAvailability(bikeColorAvailability);
         mAvengerStreet180.setBikeColorName(bikeColorNames);
         mAvengerStreet180.setBikeCapacity("180 cc");
         mAvengerStreet180.setBikeFuelTankCapacity("13 L");

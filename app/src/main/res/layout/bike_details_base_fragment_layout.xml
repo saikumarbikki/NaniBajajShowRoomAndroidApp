@@ -12,24 +12,23 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-
             <android.support.v4.view.ViewPager
                 android:id="@+id/viewPager"
                 android:layout_width="match_parent"
                 android:layout_height="300dp"
                 android:layout_marginTop="2dp"
-                android:background="@drawable/card_base_white"/>
+                android:background="@drawable/card_base_white" />
 
             <TextView
                 android:id="@+id/bike_title"
                 android:layout_width="wrap_content"
                 android:layout_height="60dp"
                 android:layout_below="@+id/viewPager"
+                android:layout_marginTop="2dp"
                 android:background="@drawable/card_base_white"
                 android:fontFamily="sans-serif"
                 android:gravity="center"
                 android:text="Bike Title"
-                android:layout_marginTop="2dp"
                 android:textColor="@color/lite_fb_blue"
                 android:textSize="20sp"
                 android:textStyle="bold" />
@@ -57,8 +56,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:orientation="horizontal"
-        android:background="@color/white_gray">
+        android:background="@color/white_gray"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/getoffers_button"

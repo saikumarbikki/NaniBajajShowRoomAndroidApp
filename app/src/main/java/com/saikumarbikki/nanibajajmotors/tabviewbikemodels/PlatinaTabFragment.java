@@ -71,7 +71,7 @@ public class PlatinaTabFragment extends Fragment implements BikeItemEventListene
         //We are setting all the bike information to Bike data object by the help of constructor and setter method.
         BikeData mPlantina100ES = new BikeData(getString(R.string.platina_100ES_title), R.drawable.platina_100es, null);
         mPlantina100ES.setBikeFaceImages(plantinaBikeFaces);
-        mPlantina100ES.setBikeColorAvaliblity(bikeColorAvailability);
+        mPlantina100ES.setBikeColorAvailability(bikeColorAvailability);
         mPlantina100ES.setBikeColorName(bikeColorNames);
         mPlantina100ES.setBikeCapacity("102 cc");
         mPlantina100ES.setBikeFuelTankCapacity("11.5 L");

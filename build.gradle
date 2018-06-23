@@ -5,6 +5,9 @@
             // You need to add the following repository to download the
             // new plugin.
             google()
+            jcenter()
+            mavenCentral()
+            maven { url 'C:/Program Files/Android/Android Studio/gradle/m2repository/'}
         }
 
         dependencies {
@@ -13,7 +16,10 @@
     }
 allprojects {
     repositories {
+        google()
         jcenter()
+        mavenCentral()
+        maven { url 'C:/Program Files/Android/Android Studio/gradle/m2repository/'}
     }
 }
 

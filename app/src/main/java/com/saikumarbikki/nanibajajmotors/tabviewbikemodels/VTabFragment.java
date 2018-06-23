@@ -66,7 +66,7 @@ public class VTabFragment extends Fragment implements BikeItemEventListener {
         bikeColorNames.add("Black");
         BikeData mV12 = new BikeData(getString(R.string.V_12_title), R.drawable.v12, null);
         mV12.setBikeFaceImages(v12BikeFaces);
-        mV12.setBikeColorAvaliblity(bikeColorAvailability);
+        mV12.setBikeColorAvailability(bikeColorAvailability);
         mV12.setBikeColorName(bikeColorNames);
         mV12.setBikeCapacity("124.5 cc");
         mV12.setBikeFuelTankCapacity("13 L");
@@ -90,7 +90,7 @@ public class VTabFragment extends Fragment implements BikeItemEventListener {
         bikeColorNames.add("Stylish Backrest");
         BikeData mV15 = new BikeData(getString(R.string.V_15_title), R.drawable.v15, null);
         mV15.setBikeFaceImages(v15BikeFaces);
-        mV15.setBikeColorAvaliblity(bikeColorAvailability);
+        mV15.setBikeColorAvailability(bikeColorAvailability);
         mV15.setBikeColorName(bikeColorNames);
         mV15.setBikeCapacity("149.5 cc");
         mV15.setBikeFuelTankCapacity("13 L");

@@ -100,7 +100,7 @@ public class PulsarTabFragment extends Fragment implements BikeItemEventListener
 
         BikeData mPulsar150 = new BikeData(getString(R.string.pulsar_150_title), R.drawable.pulsar_150, null);
         mPulsar150.setBikeFaceImages(pulsarBikeFaces);
-        mPulsar150.setBikeColorAvaliblity(bikeColorAvailability);
+        mPulsar150.setBikeColorAvailability(bikeColorAvailability);
         mPulsar150.setBikeColorName(bikeColorNames);
         mPulsar150.setBikeCapacity("149 cc");
         mPulsar150.setBikeFuelTankCapacity("15 L");
@@ -126,7 +126,7 @@ public class PulsarTabFragment extends Fragment implements BikeItemEventListener
         bikeColorNames.add("Laser Black");
         BikeData mPulsar180 = new BikeData(getString(R.string.pulsar_180_title), R.drawable.pulsar_180, null);
         mPulsar180.setBikeFaceImages(pulsarBikeFaces);
-        mPulsar180.setBikeColorAvaliblity(bikeColorAvailability);
+        mPulsar180.setBikeColorAvailability(bikeColorAvailability);
         mPulsar180.setBikeColorName(bikeColorNames);
         mPulsar180.setBikeCapacity("178.6 cc");
         mPulsar180.setBikeFuelTankCapacity("15 L");
@@ -150,7 +150,7 @@ public class PulsarTabFragment extends Fragment implements BikeItemEventListener
         bikeColorNames.add("Laser Black");
         BikeData mPulsar135LS = new BikeData(getString(R.string.pulsar_135LS_title), R.drawable.pulsar_135ls, null);
         mPulsar135LS.setBikeFaceImages(pulsarBikeFaces);
-        mPulsar135LS.setBikeColorAvaliblity(bikeColorAvailability);
+        mPulsar135LS.setBikeColorAvailability(bikeColorAvailability);
         mPulsar135LS.setBikeColorName(bikeColorNames);
         mPulsar135LS.setBikeCapacity("134.6 cc");
         mPulsar135LS.setBikeFuelTankCapacity("8 L");
@@ -176,7 +176,7 @@ public class PulsarTabFragment extends Fragment implements BikeItemEventListener
         bikeColorNames.add("Laser Black");
         BikeData mPulsar220F = new BikeData(getString(R.string.pulsar_220F_title), R.drawable.pulsar_220f, null);
         mPulsar220F.setBikeFaceImages(pulsarBikeFaces);
-        mPulsar220F.setBikeColorAvaliblity(bikeColorAvailability);
+        mPulsar220F.setBikeColorAvailability(bikeColorAvailability);
         mPulsar220F.setBikeColorName(bikeColorNames);
         mPulsar220F.setBikeCapacity("220 cc");
         mPulsar220F.setBikeFuelTankCapacity("15 L");
@@ -198,7 +198,7 @@ public class PulsarTabFragment extends Fragment implements BikeItemEventListener
         bikeColorNames.add("Saffire Blue");
         BikeData mPulsarNS160 = new BikeData(getString(R.string.pulsar_NS160_title), R.drawable.pulsar_ns160, null);
         mPulsarNS160.setBikeFaceImages(pulsarBikeFaces);
-        mPulsarNS160.setBikeColorAvaliblity(bikeColorAvailability);
+        mPulsarNS160.setBikeColorAvailability(bikeColorAvailability);
         mPulsarNS160.setBikeColorName(bikeColorNames);
         mPulsarNS160.setBikeCapacity("160.3 cc");
         mPulsarNS160.setBikeFuelTankCapacity("12 L");
@@ -220,7 +220,7 @@ public class PulsarTabFragment extends Fragment implements BikeItemEventListener
         bikeColorNames.add("Graphite Black");
         BikeData mPulsarNS200 = new BikeData(getString(R.string.pulsar_NS220_title), R.drawable.pulsar_ns200, null);
         mPulsarNS200.setBikeFaceImages(pulsarBikeFaces);
-        mPulsarNS200.setBikeColorAvaliblity(bikeColorAvailability);
+        mPulsarNS200.setBikeColorAvailability(bikeColorAvailability);
         mPulsarNS200.setBikeColorName(bikeColorNames);
         mPulsarNS200.setBikeCapacity("199.5 cc");
         mPulsarNS200.setBikeFuelTankCapacity("12 L");
@@ -240,7 +240,7 @@ public class PulsarTabFragment extends Fragment implements BikeItemEventListener
         bikeColorNames.add("Graphite Black");
         BikeData mPulsarRS200 = new BikeData(getString(R.string.pulsar_RS220_title), R.drawable.pulsar_rs200, null);
         mPulsarRS200.setBikeFaceImages(pulsarBikeFaces);
-        mPulsarRS200.setBikeColorAvaliblity(bikeColorAvailability);
+        mPulsarRS200.setBikeColorAvailability(bikeColorAvailability);
         mPulsarRS200.setBikeColorName(bikeColorNames);
         mPulsarRS200.setBikeCapacity("199.5 cc");
         mPulsarRS200.setBikeFuelTankCapacity("13 L");

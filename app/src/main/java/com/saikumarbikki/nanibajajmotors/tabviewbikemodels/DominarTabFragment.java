@@ -72,7 +72,7 @@ public class DominarTabFragment extends Fragment implements BikeItemEventListene
         bikeColorNames.add("Twilight Plum");
         BikeData mDonminar400 = new BikeData(getString(R.string.dominar_400_title), R.drawable.dominar_12345, null);
         mDonminar400.setBikeFaceImages(dominarBikeFaces);
-        mDonminar400.setBikeColorAvaliblity(bikeColorAvailability);
+        mDonminar400.setBikeColorAvailability(bikeColorAvailability);
         mDonminar400.setBikeColorName(bikeColorNames);
         mDonminar400.setBikeCapacity("373.3 cc");
         mDonminar400.setBikeFuelTankCapacity("13 L");

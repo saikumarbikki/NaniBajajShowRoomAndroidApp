@@ -76,7 +76,7 @@ public class CT100TabFragment extends Fragment implements BikeItemEventListener 
         bikeColorNames.add("EBONY BLACK \n (RED DECALS)");
         BikeData mCT100B = new BikeData(getString(R.string.CT_100B_title), R.drawable.ct_100b, null);
         mCT100B.setBikeFaceImages(discoverBikeFaces);
-        mCT100B.setBikeColorAvaliblity(bikeColorAvailability);
+        mCT100B.setBikeColorAvailability(bikeColorAvailability);
         mCT100B.setBikeColorName(bikeColorNames);
         mCT100B.setBikeCapacity("99.27 cc");
         mCT100B.setBikeFuelTankCapacity("10.5 L");
@@ -99,7 +99,7 @@ public class CT100TabFragment extends Fragment implements BikeItemEventListener 
         bikeColorNames.add("EBONY BLACK \n (RED DECALS)");
         BikeData mCT100B = new BikeData(getString(R.string.CT_100_KS_Alloy_title), R.drawable.ct_100_ks_alloy, null);
         mCT100B.setBikeFaceImages(discoverBikeFaces);
-        mCT100B.setBikeColorAvaliblity(bikeColorAvailability);
+        mCT100B.setBikeColorAvailability(bikeColorAvailability);
         mCT100B.setBikeColorName(bikeColorNames);
         mCT100B.setBikeCapacity("99.27 cc");
         mCT100B.setBikeFuelTankCapacity("10.5 L");
@@ -122,7 +122,7 @@ public class CT100TabFragment extends Fragment implements BikeItemEventListener 
         bikeColorNames.add("EBONY BLACK \n (RED DECALS)");
         BikeData mCT100B = new BikeData(getString(R.string.CT_100_ES_Alloy_title), R.drawable.ct_100_es_alloy, null);
         mCT100B.setBikeFaceImages(discoverBikeFaces);
-        mCT100B.setBikeColorAvaliblity(bikeColorAvailability);
+        mCT100B.setBikeColorAvailability(bikeColorAvailability);
         mCT100B.setBikeColorName(bikeColorNames);
         mCT100B.setBikeCapacity("102 cc");
         mCT100B.setBikeFuelTankCapacity("10.5 L");

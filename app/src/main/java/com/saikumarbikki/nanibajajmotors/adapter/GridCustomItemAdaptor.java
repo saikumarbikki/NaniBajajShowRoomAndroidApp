@@ -1,6 +1,7 @@
 package com.saikumarbikki.nanibajajmotors.adapter;
 
 import android.content.Context;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -62,6 +63,7 @@ public class GridCustomItemAdaptor extends BaseAdapter {
         BikeData objBikeData = bikeList.get(position);
 
         mBikeTitle_TV.setText(objBikeData.getBikeName());
+        mBikeTitle_TV.setTextColor(ContextCompat.getColor(mcontext, (R.color.lite_fb_blue)));
         mBikeImageview.setImageResource(objBikeData.getBikeImageResID());
         mBikeImageview.setTag(objBikeData);
         mBikeImageview.setOnClickListener(new View.OnClickListener() {

@@ -15,7 +15,7 @@ public class BikeData implements Parcelable{
     private int bikeImageResID;
     private String bikeDescription;
     private ArrayList<Integer> bikeFaceImages;
-    private ArrayList<Integer> bikeColorAvaliblity;
+    private ArrayList<Integer> bikeColorAvailability;
     private ArrayList<String> bikeColorName;
     private String bikeCapacity;
     private String bikeFuelTankCapacity;
@@ -40,7 +40,6 @@ public class BikeData implements Parcelable{
     public void setBikeMaxPower(String bikeMaxPower) {
         this.bikeMaxPower = bikeMaxPower;
     }
-
 
     public String getBikeWeight() {
         return bikeWeight;
@@ -87,7 +86,7 @@ public class BikeData implements Parcelable{
         this.bikeName = in.readString();
         this.bikeDescription=in.readString();
         this.bikeImageResID=in.readInt();
-        this.bikeColorAvaliblity=in.readArrayList(Integer.class.getClassLoader());
+        this.bikeColorAvailability =in.readArrayList(Integer.class.getClassLoader());
         this.bikeFaceImages=in.readArrayList(Integer.class.getClassLoader());
         this.bikeCapacity=in.readString();
         this.bikeMaxPower=in.readString();
@@ -98,14 +97,13 @@ public class BikeData implements Parcelable{
 
 
 
-    public ArrayList<Integer> getBikeColorAvaliblity() {
-        return bikeColorAvaliblity;
+    public ArrayList<Integer> getBikeColorAvailability() {
+        return bikeColorAvailability;
     }
 
-    public void setBikeColorAvaliblity(ArrayList<Integer> bikeColorAvaliblity) {
-        this.bikeColorAvaliblity = bikeColorAvaliblity;
+    public void setBikeColorAvailability(ArrayList<Integer> bikeColorAvaliblity) {
+        this.bikeColorAvailability = bikeColorAvaliblity;
     }
-
 
     public BikeData(String bikeName, int bikeImageResID, String bikeDescription, ArrayList<Integer> bikeFaceImages) {
         this.bikeName = bikeName;
@@ -159,14 +157,14 @@ public class BikeData implements Parcelable{
 
     @Override
     public void writeToParcel(Parcel dest, int flags) {
-        //write all the feilds to paracalible
+        //write all the fields to parcelable
         //Need to follow : we need write all the bike specific information in it.
         //This will help to send details from one fragment  to another fragment.
         dest.writeString(bikeName);
         dest.writeInt(bikeImageResID);
         dest.writeString(bikeDescription);
         dest.writeList(bikeFaceImages);
-        dest.writeList(bikeColorAvaliblity);
+        dest.writeList(bikeColorAvailability);
         dest.writeString(bikeCapacity);
         dest.writeString(bikeMaxPower);
         dest.writeString(bikeFuelTankCapacity);
