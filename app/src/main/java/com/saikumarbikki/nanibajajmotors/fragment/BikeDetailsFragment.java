@@ -37,8 +37,8 @@ public class BikeDetailsFragment extends Fragment implements BikeImageClickListe
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         rootView = inflater.inflate(R.layout.bike_details_base_fragment_layout, container, false);
-        Button getoffers_button = (Button) rootView.findViewById(R.id.getoffers_button);
-        Button call_dealar_button = (Button) rootView.findViewById(R.id.calldealar_button);
+        Button getOffers_button = (Button) rootView.findViewById(R.id.getoffers_button);
+        Button call_dealer_button = (Button) rootView.findViewById(R.id.calldealar_button);
 
         selectedBikeData = getArguments().getParcelable(MyConstants.ARG_SELECTED_BIKE);
         ViewPager viewPager = (ViewPager) rootView.findViewById(R.id.viewPager);
@@ -50,14 +50,14 @@ public class BikeDetailsFragment extends Fragment implements BikeImageClickListe
         setOverViewData();
         setBikeColorsData();
 
-        getoffers_button.setOnClickListener(new View.OnClickListener() {
+        getOffers_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 GetBikeOffersFragment objGetBikeOffersFragment = new GetBikeOffersFragment();
                 communicatorListener.addFragment(objGetBikeOffersFragment, true);
             }
         });
-        call_dealar_button.setOnClickListener(new View.OnClickListener() {
+        call_dealer_button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 makePhoneCall();

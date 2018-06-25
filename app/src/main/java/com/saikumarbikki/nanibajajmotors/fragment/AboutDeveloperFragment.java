@@ -32,12 +32,14 @@ public class AboutDeveloperFragment extends Fragment implements View.OnClickList
 //        ImageView iv_skype = (ImageView) view.findViewById(R.id.iv_skype);
         ImageView iv_GooglePlus = (ImageView) view.findViewById(R.id.iv_googleplus);
         ImageView iv_Instagram = (ImageView) view.findViewById(R.id.iv_instagram);
+
         iv_LinkedIn.setOnClickListener(this);
         iv_FaceBook.setOnClickListener(this);
         iv_Twiteer.setOnClickListener(this);
 //        iv_skype.setOnClickListener(this);
         iv_GooglePlus.setOnClickListener(this);
         iv_Instagram.setOnClickListener(this);
+
         return view;
 
     }
@@ -81,7 +83,6 @@ public class AboutDeveloperFragment extends Fragment implements View.OnClickList
 
                 Uri uri = Uri.parse("https://www.instagram.com/sai_goud_1213/");
                 Intent intent_Instagram = new Intent(Intent.ACTION_VIEW, uri);
-
                 intent_Instagram.setPackage("com.instagram.android");
 
                 try {

@@ -31,34 +31,28 @@ public class BikeData implements Parcelable{
         this.bikeColorName = bikeColorName;
     }
 
-
-
     public String getBikeMaxPower() {
         return bikeMaxPower;
     }
+    public String getBikeWeight() {
+        return bikeWeight;
+    }
+    public String getBikeFuelTankCapacity() {
+        return bikeFuelTankCapacity;
+    }
+    public String getBikeCapacity() {
+        return bikeCapacity;
+    }
+
 
     public void setBikeMaxPower(String bikeMaxPower) {
         this.bikeMaxPower = bikeMaxPower;
     }
-
-    public String getBikeWeight() {
-        return bikeWeight;
-    }
-
     public void setBikeWeight(String bikeWeight) {
         this.bikeWeight = bikeWeight;
     }
-
-    public String getBikeFuelTankCapacity() {
-        return bikeFuelTankCapacity;
-    }
-
     public void setBikeFuelTankCapacity(String bikeFuelTankCapacity) {
         this.bikeFuelTankCapacity = bikeFuelTankCapacity;
-    }
-
-    public String getBikeCapacity() {
-        return bikeCapacity;
     }
 
     public void setBikeCapacity(String bikeCapacity) {
@@ -94,7 +88,6 @@ public class BikeData implements Parcelable{
         this.bikeWeight=in.readString();
         this.bikeColorName=in.readArrayList(String.class.getClassLoader());
     }
-
 
 
     public ArrayList<Integer> getBikeColorAvailability() {

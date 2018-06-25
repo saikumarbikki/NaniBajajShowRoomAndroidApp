@@ -2,6 +2,7 @@ package com.saikumarbikki.nanibajajmotors;
 
 import android.Manifest;
 import android.content.Context;
+import android.content.Intent;
 import android.content.pm.ActivityInfo;
 import android.content.pm.PackageManager;
 import android.os.Build;
@@ -79,7 +80,12 @@ public class MainActivity extends AppCompatActivity implements Communicator{
                 if (id == R.id.nav_home) {
                     fragment = new BaseTabFragment();
                 } else if (id == R.id.nav_locate_us) {
-                    fragment = new LocateUsFragment();
+
+                    //TODO Need to check phone for maps availability... if yes, display maps...if no, need to display traditional static address screen.
+//                    fragment = new LocateUsFragment();
+                    Intent intent_GoogleMaps = new Intent(MainActivity.this,GoogleMapsActivity.class);
+                    startActivity(intent_GoogleMaps);
+
                 } else if (id == R.id.nav_contact_us) {
                     fragment = new ContactUsFragment();
                 } else if (id == R.id.nav_developer) {

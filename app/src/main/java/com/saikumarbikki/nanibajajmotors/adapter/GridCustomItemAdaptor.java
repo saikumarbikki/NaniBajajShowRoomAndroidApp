@@ -63,7 +63,7 @@ public class GridCustomItemAdaptor extends BaseAdapter {
         BikeData objBikeData = bikeList.get(position);
 
         mBikeTitle_TV.setText(objBikeData.getBikeName());
-        mBikeTitle_TV.setTextColor(ContextCompat.getColor(mcontext, (R.color.lite_fb_blue)));
+        //mBikeTitle_TV.setTextColor(ContextCompat.getColor(mcontext, (R.color.lite_fb_blue)));
         mBikeImageview.setImageResource(objBikeData.getBikeImageResID());
         mBikeImageview.setTag(objBikeData);
         mBikeImageview.setOnClickListener(new View.OnClickListener() {
