@@ -53,10 +53,10 @@ public class MainActivity extends AppCompatActivity implements Communicator{
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         requestPermissions();
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.setDrawerListener(toggle);
         toggle.syncState();
@@ -67,10 +67,10 @@ public class MainActivity extends AppCompatActivity implements Communicator{
         fragmentTransaction.replace(R.id.main_container_wrapper, fragment);
         fragmentTransaction.commit();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         View header = navigationView.inflateHeaderView(R.layout.nav_header_music);
-        TextView profileName = (TextView) header.findViewById(R.id.profile_name);
-        profileName.setText("Nani Motors");
+        TextView profileName = header.findViewById(R.id.profile_name);
+        profileName.setText(R.string.app_name);
 
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override

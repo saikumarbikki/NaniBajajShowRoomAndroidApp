@@ -66,8 +66,8 @@ public class BikeDetailsFragment extends Fragment implements BikeImageClickListe
         return rootView;
     }
     private void makePhoneCall() {
-        String phone_no = "+919908243623";
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        String phone_no = getString(R.string.venu_phonenumber);
+        Intent callIntent = new Intent(Intent.ACTION_DIAL);
         callIntent.setData(Uri.parse("tel:" + phone_no));
         startActivity(callIntent);
     }
@@ -134,10 +134,10 @@ public class BikeDetailsFragment extends Fragment implements BikeImageClickListe
     private void setBikeAvalibleColorsToView(int position, int imageResID, int textViewID) {
         ArrayList<Integer> bikeColorCodes = selectedBikeData.getBikeColorAvailability();
         ArrayList<String> bikeColorNames = selectedBikeData.getBikeColorName();
-        ImageView imageView = (ImageView) rootView.findViewById(imageResID);
+        ImageView imageView = rootView.findViewById(imageResID);
         imageView.setBackgroundColor(getResources().getColor(bikeColorCodes.get(position)));
         imageView.setVisibility(View.VISIBLE);
-        TextView textView = (TextView) rootView.findViewById(textViewID);
+        TextView textView = rootView.findViewById(textViewID);
         textView.setText(bikeColorNames.get(position));
         textView.setVisibility(View.VISIBLE);
     }

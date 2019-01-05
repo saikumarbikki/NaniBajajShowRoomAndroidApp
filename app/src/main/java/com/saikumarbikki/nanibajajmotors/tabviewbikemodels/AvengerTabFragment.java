@@ -38,7 +38,7 @@ public class AvengerTabFragment extends Fragment implements BikeItemEventListene
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.avenger_tab_fragment_layout, container, false);
-        GridView gridView = (GridView) view.findViewById(R.id.grid_view_bikeimage_title);
+        GridView gridView = view.findViewById(R.id.grid_view_bikeimage_title);
         ArrayList<BikeData> bikeModlesData = getBikesModels();
         //Custom Adaptor(need to use adaptor for gridView)
         GridCustomItemAdaptor objGridCustomItemAdaptor = new GridCustomItemAdaptor(getContext(), bikeModlesData);

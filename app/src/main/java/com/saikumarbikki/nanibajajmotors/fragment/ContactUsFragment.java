@@ -120,7 +120,7 @@ public class ContactUsFragment extends Fragment implements View.OnClickListener 
 
     private void makePhoneCall(TextView phoneNumber_TV) {
         String phone_no = phoneNumber_TV.getText().toString().replaceAll("-", "");
-        Intent callIntent = new Intent(Intent.ACTION_CALL);
+        Intent callIntent = new Intent(Intent.ACTION_DIAL);
         callIntent.setData(Uri.parse("tel:" + phone_no));
         startActivity(callIntent);
     }

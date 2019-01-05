@@ -42,8 +42,8 @@ public class GoogleMapsActivity extends FragmentActivity implements OnMapReadyCa
         LatLng latLng_Kesamudram = new LatLng(17.695708, 79.862559);
 
         //ToDo Need to get marker title from string file
-        needLocationMarker(latLng_Maripeda,"Nani Bajaj ShowRoom Maripeda(Banglow)");
-        needLocationMarker(latLng_Kesamudram,"Uma Sai Bajaj ShowRoom(Kesamudram)");
+        needLocationMarker(latLng_Maripeda,getString(R.string.kargilcenter));
+        needLocationMarker(latLng_Kesamudram,getString(R.string.marketroad));
     }
 
     // Add a marker in needed location and move the camera

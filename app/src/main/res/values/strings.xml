@@ -65,6 +65,8 @@
     <!--Google Maps-->
     <string name="Maripeda_map_marker">Nani Bajaj ShowRoom Maripeda(Banglow)</string>
     <string name="Kesamudram_map_marker">Uma Sai Bajaj ShowRoom(Kesamudram)</string>
-`
+    <string name="venu_phonenumber">+919908243623</string>
+    <string name="kargilcenter">Kargil Center</string>
+    <string name="marketroad">Market Road</string>
 
 </resources>

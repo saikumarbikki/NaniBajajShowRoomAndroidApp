@@ -3,6 +3,7 @@ package com.saikumarbikki.nanibajajmotors.fragment;
 
 import android.os.Build;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.RequiresApi;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
@@ -28,7 +29,7 @@ public class BaseTabFragment extends Fragment {
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+    public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_base, container, false);
 
         tabLayout = (TabLayout)view.findViewById(R.id.tabs);
