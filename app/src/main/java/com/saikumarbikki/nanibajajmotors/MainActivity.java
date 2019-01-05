@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity implements Communicator{
         setContentView(R.layout.activity_main);
 
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
-        requestPermissions();
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
@@ -102,71 +101,6 @@ public class MainActivity extends AppCompatActivity implements Communicator{
                 return true;
             }
         });
-    }
-
-    //Calling and message permissions related code
-
-    private void requestPermissions() {
-        //ask permissions for first time only
-
-
-        int permissionSendMSG = ContextCompat.checkSelfPermission(this,Manifest.permission.SEND_SMS);
-        int permissionCall = ContextCompat.checkSelfPermission(this,Manifest.permission.CALL_PHONE);
-        List<String > listPermissionsNeeded =new ArrayList<>();
-        if(permissionSendMSG != PackageManager.PERMISSION_GRANTED) {
-            listPermissionsNeeded.add(Manifest.permission.SEND_SMS);
-        }
-        if(permissionCall != PackageManager.PERMISSION_GRANTED) {
-            listPermissionsNeeded.add(Manifest.permission.CALL_PHONE);
-        }
-
-        if(!listPermissionsNeeded.isEmpty()) {
-            ActivityCompat.requestPermissions(this,listPermissionsNeeded.toArray(new String[listPermissionsNeeded.size()]), REQUEST_ID_MULTIPLE_PERMISSIONS);
-        }
-
-    }
-
-    @Override
-    public void onRequestPermissionsResult(int requestCode,
-                                           String permissions[], int[] grantResults) {
-        Log.d(TAG, "Permission callback called-------");
-        switch (requestCode) {
-            case REQUEST_ID_MULTIPLE_PERMISSIONS: {
-
-                Map<String, Integer> perms = new HashMap<>();
-                // Initialize the map with both permissions
-                perms.put(Manifest.permission.SEND_SMS, PackageManager.PERMISSION_GRANTED);
-                perms.put(Manifest.permission.CALL_PHONE, PackageManager.PERMISSION_GRANTED);
-                // Fill with actual results from user
-                if (grantResults.length > 0) {
-                    for (int i = 0; i < permissions.length; i++)
-                        perms.put(permissions[i], grantResults[i]);
-                    // Check for both permissions
-                    if (perms.get(Manifest.permission.SEND_SMS) == PackageManager.PERMISSION_GRANTED
-                            && perms.get(Manifest.permission.CALL_PHONE) == PackageManager.PERMISSION_GRANTED) {
-                        Log.d(TAG, "sms & location services permission granted");
-                        // process the normal flow
-                        //else any one or both the permissions are not granted
-                    } else {
-                        Log.d(TAG, "Some permissions are not granted ask again ");
-                        //permission is denied (this is the first time, when "never ask again" is not checked) so ask again explaining the usage of permission
-//                        // shouldShowRequestPermissionRationale will return true
-                        //show the dialog or snackbar saying its necessary and try again otherwise proceed with setup.
-                        if (ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.SEND_SMS) || ActivityCompat.shouldShowRequestPermissionRationale(this, Manifest.permission.CALL_PHONE)) {
-
-                        }
-                        //permission is denied (and never ask again is  checked)
-                        //shouldShowRequestPermissionRationale will return false
-                        else {
-                            Toast.makeText(this, "Go to settings and enable permissions", Toast.LENGTH_LONG)
-                                    .show();
-                            //                            //proceed with logic by disabling the related features or quit the app.
-                        }
-                    }
-                }
-            }
-        }
-
     }
 
 

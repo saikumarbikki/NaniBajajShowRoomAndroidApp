@@ -1,9 +1,10 @@
 package com.saikumarbikki.nanibajajmotors.fragment;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.telephony.SmsManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,11 +48,12 @@ public class GetBikeOffersFragment extends Fragment {
 
     public void sendSMS() {
         try {
-            String smsMsg = "Hi Nani Showroom Team, Please share latest bike offers." + "\nThis is " + et_customerName.getText().toString() + "\n Contact me: " + et_phonenumber.getText().toString() ;
-            SmsManager smsManager = SmsManager.getDefault();
-            smsManager.sendTextMessage("+919908243623", null, smsMsg, null, null);
-            Toast.makeText(getContext(), " We will get back to you soon with latest offers.", Toast.LENGTH_LONG).show();
-        } catch (Exception ex) {
+            String smsMsg = "Hi Nani Showroom Team, Please share latest bike offers." + "\nThis is " + et_customerName.getText().toString() + "\n Contact me: " + et_phonenumber.getText().toString();
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:+919908243623"));
+            sendIntent.putExtra("sms_body", smsMsg);
+            startActivity(sendIntent);
+            } catch (Exception ex) {
             Toast.makeText(getContext(), " message sending failed.", Toast.LENGTH_SHORT).show();
             ex.printStackTrace();
         }
