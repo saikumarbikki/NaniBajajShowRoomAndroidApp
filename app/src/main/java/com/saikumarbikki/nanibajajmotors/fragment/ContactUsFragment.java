@@ -1,18 +1,18 @@
 package com.saikumarbikki.nanibajajmotors.fragment;
 
-import android.content.Intent;
-import android.net.Uri;
-import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ImageView;
-import android.widget.TextView;
-import android.widget.Toast;
+        import android.content.Intent;
+        import android.net.Uri;
+        import android.os.Bundle;
+        import android.support.annotation.Nullable;
+        import android.support.v4.app.Fragment;
+        import android.view.LayoutInflater;
+        import android.view.View;
+        import android.view.ViewGroup;
+        import android.widget.ImageView;
+        import android.widget.TextView;
+        import android.widget.Toast;
 
-import com.saikumarbikki.nanibajajmotors.R;
+        import com.saikumarbikki.nanibajajmotors.R;
 
 
 /**
@@ -126,10 +126,15 @@ public class ContactUsFragment extends Fragment implements View.OnClickListener 
     }
 
     private void sendSMS(TextView phonenumber_tv) {
-        String phone_no = phonenumber_tv.getText().toString().replaceAll("-", "");
-        Intent smsIntent = new Intent(Intent.ACTION_VIEW);
-        smsIntent.setType("vnd.android-dir/mms-sms");
-        smsIntent.putExtra("address", phone_no);
-        startActivity(smsIntent);
+        try {
+            String phone_no = phonenumber_tv.getText().toString().replaceAll("-", "");
+            Intent sendIntent = new Intent(Intent.ACTION_VIEW);
+            sendIntent.setData(Uri.parse("sms:" + phone_no));
+            sendIntent.putExtra("sms_body", "");
+            startActivity(sendIntent);
+        } catch (Exception ex) {
+            Toast.makeText(getContext(), " message sending failed.", Toast.LENGTH_SHORT).show();
+            ex.printStackTrace();
+        }
     }
 }

@@ -29,14 +29,14 @@ public class AboutDeveloperFragment extends Fragment implements View.OnClickList
         ImageView iv_LinkedIn = (ImageView) view.findViewById(R.id.iv_linkedIn);
         ImageView iv_FaceBook = (ImageView) view.findViewById(R.id.iv_fb);
         ImageView iv_Twiteer = (ImageView) view.findViewById(R.id.iv_twiteer);
-//        ImageView iv_skype = (ImageView) view.findViewById(R.id.iv_skype);
+//      ImageView iv_skype = (ImageView) view.findViewById(R.id.iv_skype);
         ImageView iv_GooglePlus = (ImageView) view.findViewById(R.id.iv_googleplus);
         ImageView iv_Instagram = (ImageView) view.findViewById(R.id.iv_instagram);
 
         iv_LinkedIn.setOnClickListener(this);
         iv_FaceBook.setOnClickListener(this);
         iv_Twiteer.setOnClickListener(this);
-//        iv_skype.setOnClickListener(this);
+//      iv_skype.setOnClickListener(this);
         iv_GooglePlus.setOnClickListener(this);
         iv_Instagram.setOnClickListener(this);
 
@@ -66,7 +66,7 @@ public class AboutDeveloperFragment extends Fragment implements View.OnClickList
                 break;
 
             }
-         /*   case R.id.iv_skype: {
+         /* case R.id.iv_skype: {
                 Intent sky = new Intent("android.intent.action.VIEW");
                 sky.setData(Uri.parse("skype:" + "saikumarbikki"));
                 startActivity(sky);
