@@ -29,9 +29,9 @@ public class GetBikeOffersFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.get_offers_fragment, container, false);
-        et_customerName = (EditText) view.findViewById(R.id.custumer_name);
-        et_phonenumber = (EditText) view.findViewById(R.id.custumer_phone);
-        Button bt_submit = (Button) view.findViewById(R.id.submit_button);
+        et_customerName = view.findViewById(R.id.custumer_name);
+        et_phonenumber = view.findViewById(R.id.custumer_phone);
+        Button bt_submit = view.findViewById(R.id.submit_button);
         bt_submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

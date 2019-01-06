@@ -20,9 +20,6 @@ public class BaseTabFragment extends Fragment {
 
     private static final String TAG = BaseTabFragment.class.getSimpleName();
 
-    private TabLayout tabLayout;
-    private ViewPager viewPager;
-
 
     public BaseTabFragment() {
     }
@@ -32,8 +29,8 @@ public class BaseTabFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_base, container, false);
 
-        tabLayout = (TabLayout)view.findViewById(R.id.tabs);
-        viewPager = (ViewPager)view.findViewById(R.id.view_pager);
+        TabLayout tabLayout = (TabLayout) view.findViewById(R.id.tabs);
+        ViewPager viewPager = (ViewPager) view.findViewById(R.id.view_pager);
 
         viewPager.setAdapter(new CustomFragmentPageAdapter(getChildFragmentManager()));
         tabLayout.setupWithViewPager(viewPager);

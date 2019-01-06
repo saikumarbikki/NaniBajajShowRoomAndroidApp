@@ -22,5 +22,4 @@ public class LocateUsFragment extends Fragment {
         return view;
     }
 
-
 }
