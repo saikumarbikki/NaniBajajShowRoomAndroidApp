@@ -22,14 +22,15 @@
         android:textStyle="bold" />
     <ImageView
         android:id="@+id/bajaj_IB_logo"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="12dp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="14dp"
         android:layout_marginLeft="2dp"
         android:layout_marginRight="2dp"
         android:layout_toRightOf="@+id/NaniMotors_Title_1"
         android:layout_gravity="center"
-        android:src="@drawable/bj" />
+        android:src="@drawable/bj"
+        android:layout_toEndOf="@+id/NaniMotors_Title_1" />
     <TextView
         android:id="@+id/NaniMotors_Title_2"
         android:layout_width="wrap_content"
@@ -39,7 +40,8 @@
         android:text="@string/SplashScreen_title_2"
         android:textColor="@color/white"
         android:textSize="45sp"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/bajaj_IB_logo" />
     </RelativeLayout>
 
     <ImageView
